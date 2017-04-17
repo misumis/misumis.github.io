@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   max-width: 500px;
   margin: 0 auto;
-  display: table;
+  display: block;
   overflow-x: hidden;
   top: 30vh;
   left: 0;
@@ -184,56 +184,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skills-area{
   background: #424242 ;
-  height: 97vh;
-  height: 97%;
-  width: 100%;
-  position: absolute;
-  
-
   display: -webkit-flex;
-   display: flex;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   /* You can set flex-wrap and flex-direction individually */
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   /* Or do it all in one line with flex flow */
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   /* tweak the where items line up on the row */
-   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-   overflow: hidden;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+  align-items: stretch;
+  overflow: hidden;
 
 }
-.skills-items-row{
-  height: 50%;
-  width:100%;
-  margin: auto;
-  flex: ;
-  display:flex;
-  flex-wrap: wrap;
-}
+
 
 .skills-item{
-  height: 50%;
-  margin: auto;
+
+ 
+  flex: 1 0 25%;
+  /*height: 350px;*/
+  padding: 30px;
+  margin: 0;
   border: 1px solid rgba(0,0,0,0.3);
   box-sizing: border-box;
-  flex: 0 0 25%;
   }
 @media (max-width: 764px) {
   .skills-item {
-    height:50%;
-    flex : 0 0 50%;}
+    flex-basis: 50%;}
 }
 .skills-item-emblem{
-  position:relative;
+  display: block;
   top: 8vh;
   margin: auto;
 }
