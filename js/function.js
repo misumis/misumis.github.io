@@ -36,3 +36,12 @@
 	  });
   });
 
+var laundryRoom = 'Basement';
+var mailRoom = 'Room 1A';
+
+console.log('Laundry: ' + laundryRoom + ', Mail: '+ mailRoom);
+
+function myApartment(){
+	var mailBoxNumer = 'Box 3'
+	console.log();
+}
