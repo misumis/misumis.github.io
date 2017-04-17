@@ -21,11 +21,37 @@
 	  });
   });
 
-
 $(function(){
-		$(".text-spec").typed({
-			strings: ["Junior Front-End Developer"],
-			typeSpeed: 60,
-			showCursor:false
-		});
+	$(".text-spec").typed({
+		strings: ["Junior Front-End Developer"],
+		typeSpeed: 60,
+		showCursor:false
 	});
+});
+
+
+$(document).ready(function(){
+  // $sections incleudes all of the container divs that relate to menu items.
+  var $sections = $('.area');
+  $(window).scroll(function(){
+    
+    // currentScroll is the number of pixels the window has been scrolled
+    var currentScroll = $(this).scrollTop();
+    
+    // $currentSection is somewhere to place the section we must be looking at
+    var $currentSection
+    
+    // We check the position of each of the divs compared to the windows scroll positon
+    $sections.each(function(){
+      var divPosition = $(this).offset().top;
+      if( divPosition - 1 < currentScroll ){
+        $currentSection = $(this);
+      }
+      var id = $currentSection.attr('id');
+   	 $('a').removeClass('active');
+   	 $("[href='#" + id + "']").addClass('active');
+      
+    })
+
+  });
+});
