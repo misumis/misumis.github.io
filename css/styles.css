@@ -1,5 +1,8 @@
 .brightness {-webkit-filter: brightness(1); filter: brightness(1);}
 .invert {-webkit-filter: invert(100%); filter: invert(100%);}
+.underline{
+  text-decoration: underline;
+}
 
 body{
 	font-size: 20px;
@@ -45,6 +48,15 @@ li{
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     margin: 0;
+}
+h2{
+    font-size: 40px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    padding: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    
 }
 
 .container{
@@ -138,7 +150,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .authorname-wrapper{
   position: absolute;
-  height: 100%;
   max-width: 500px;
   margin: 0 auto;
   display: block;
@@ -169,6 +180,61 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
     }
 
+/***************ABOUT ME***************/
+.aboutme-area{
+  width: 100%;
+  
+  margin: 0;
+}
+.aboutme-container{
+  width: 100%;
+  height: 100%;
+  background: rgba(40,40,40,0.3);
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+}
+.aboutme-item-img{
+  flex: 1 0 50%;
+  margin: 35px 0;
+  padding: auto;
+}
+.aboutme-item-img img{
+  display: block;
+ border-radius: 50%;
+  width: 60%;
+  margin: auto;
+  border: 10px solid rgba(0,0,0,0.2);
+
+}
+
+.aboutme-item-text{
+  flex: 1 0 50%;
+  margin: auto;
+  padding: 20px;
+  
+}
+@media (max-width: 764px) {
+  .aboutme-item {
+    width:100%;
+    flex-basis: 100%;}
+    
+}
+
+
+
+
+/*******************SKILLS*******************/
 .skills-section{
   background: #434343;
   height: 60px;
@@ -190,7 +256,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-flex-direction: row;
@@ -208,10 +273,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .skills-item{
-
- 
   flex: 1 0 25%;
-  /*height: 350px;*/
+  height: 350px;
   padding: 30px;
   margin: 0;
   border: 1px solid rgba(0,0,0,0.3);
@@ -219,6 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 @media (max-width: 764px) {
   .skills-item {
+    width:50%;
     flex-basis: 50%;}
 }
 .skills-item-emblem{
@@ -242,7 +306,8 @@ h1, h2, h3, h4, h5, h6 {
 .skills-item:hover{
    -webkit-transition: 0.5s; 
   transition: 0.5s;
-  background: #444444;
+  background: #464646;
+  .skills-emblem-img{width: 65%;}
 }
 .footer{
   margin: 30px;

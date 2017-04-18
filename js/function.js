@@ -8,6 +8,12 @@
 	  	}, 1000);
 	});
 
+  	 $("#btnAboutMe").click(function() {
+	  	$("html, body").animate({
+	  		scrollTop: $("#aboutme").offset().top
+	  	}, 1000);
+	  });
+
 	  $("#btnSkills").click(function() {
 	  	$("html, body").animate({
 	  		scrollTop: $("#skills").offset().top
