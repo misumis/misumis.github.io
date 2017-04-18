@@ -37,6 +37,7 @@ $(function(){
 
 
 $(document).ready(function(){
+	$("[href='#" + 'home' + "']").addClass('active');
   // $sections incleudes all of the container divs that relate to menu items.
   var $sections = $('.area');
   $(window).scroll(function(){
@@ -49,6 +50,7 @@ $(document).ready(function(){
     
     // We check the position of each of the divs compared to the windows scroll positon
     $sections.each(function(){
+
       var divPosition = $(this).offset().top;
       if( divPosition - 1 < currentScroll ){
         $currentSection = $(this);

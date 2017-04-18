@@ -274,7 +274,7 @@ h2{
 
 .skills-item{
   flex: 1 0 25%;
-  height: 350px;
+  height: 380px;
   padding: 30px;
   margin: 0;
   border: 1px solid rgba(0,0,0,0.3);
@@ -297,18 +297,19 @@ h2{
 }
 
 .skills-item-title{
-  margin: 20px;
+  padding: 0px;
+  margin: 50px 0;
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
 }
 
 .skills-item:hover{
-   -webkit-transition: 0.5s; 
-  transition: 0.5s;
-  background: #464646;
-  .skills-emblem-img{width: 65%;}
+   -webkit-transition: 0.3s; 
+  transition: 0.3s;
+  background: #474747;
 }
+
 .footer{
   margin: 30px;
   height: 30px;
