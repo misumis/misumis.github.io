@@ -25,6 +25,7 @@
 	  		scrollTop: $("#contact").offset().top
 	  	}, 1000);
 	  });
+	  
   });
 
 $(function(){

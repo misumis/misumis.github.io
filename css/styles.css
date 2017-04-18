@@ -1,4 +1,5 @@
 .brightness {-webkit-filter: brightness(1); filter: brightness(1);}
+.shadow{height: 100%;width: 100%;background: rgba(0,0,0,0.6);z-index: -1;float:left;position: absolute;}
 .invert {-webkit-filter: invert(100%); filter: invert(100%);}
 .underline{
   text-decoration: underline;
@@ -220,7 +221,7 @@ h2{
 
 .aboutme-item-text{
   flex: 1 0 50%;
-  margin: auto;
+  margin: 30px 0;
   padding: 20px;
   
 }
@@ -235,22 +236,7 @@ h2{
 
 
 /*******************SKILLS*******************/
-.skills-section{
-  background: #434343;
-  height: 60px;
-}
-.section-title{
-  color: #fff ;
-  font-size: 25px;
-  text-transform: capitalize;
-  font-weight: bold;
-  margin: auto;
-  text-decoration: underline;
-  text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-  text-align: center;
-  line-height: 50px;
 
-}
 .skills-area{
   background: #424242 ;
   display: -webkit-flex;
@@ -310,8 +296,27 @@ h2{
   background: #474747;
 }
 
+/*********************CONTACT******************/
+.contact-area{
+  display: block;
+  margin: auto;
+  padding: auto;
+height: 900px;
+width: 100%;
+background: url(../img/contact-background.png);
+background-repeat: repeat;
+background-size:50%;
+
+}
+.contact-container{
+  background: rgba(40,40,40,0.2);
+  width: 100%;
+  height: 100%;
+}
 .footer{
-  margin: 30px;
-  height: 30px;
+  height: 40px;
   bottom: 0px;
+  text-align: right;
+  line-height: 40px;
+  margin-right: 40px;
 }
