@@ -11,6 +11,8 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<!-- ****************   SCRIPTS  ******************* -->
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/typed.min.js" type="text/javascript" charset="utf-8" async defer></script>
@@ -147,11 +149,36 @@
 		<div class='area contact-area' id='contact'>
 		<!-- <div class="shadow"></div> -->
 			<div class='contact-container'>
-				<div class="contact-form">
-					
-				</div>
+				<form class="contact-form" id='contact-form' action="misumis.github.io" method="get">
+					<div class="contact-column">
+						<div class="input-field">
+							<i class="material-icons prefix">account_circle</i>
+				          <input id="first_name" type="text" class="validate">
+				          <label for="first_name">Name and surname</label>
+				        </div>
+			          	<div class="input-field">
+			          		<i class="material-icons prefix">email</i>
+					        <input id="email" type="email" class="validate">
+					        <label for="email">Email</label>
+				        </div>
+				        <div class="input-field">
+				          <i class="material-icons prefix">phone</i>
+				          <input id="icon_telephone" type="tel" class="validate">
+				          <label for="icon_telephone">Telephone</label>
+				        </div>
+						<div class="input-field">
+				          <i class="material-icons prefix">mode_edit</i>
+				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          				<label for="textarea1">Message</label>
+				        </div>
+				        <button class="btn waves-effect waves-light contact-submit-button" type="submit" form='contact-form' value='Submit'>Submit
+						    <i class="material-icons right">send</i>
+						</button>
+						</div> <!-- COLUMN -->
+					<div class="contact-column">
+					</div>
+				</form>
 			</div>
-			
 		</div>
 
 			<div class="footer">Michal Nowak 2017 ©</div>

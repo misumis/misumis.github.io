@@ -4,7 +4,7 @@ $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 1800);
+    }, 1800); //1800
  	
  	setTimeout(function(){
  		$(".text-spec").typed({
