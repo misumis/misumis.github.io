@@ -1,3 +1,20 @@
+
+//Loader funciton
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 1800);
+ 	
+ 	setTimeout(function(){
+ 		$(".text-spec").typed({
+		strings: ["Junior Front-End Developer"],
+		typeSpeed: 60,
+		showCursor:false
+	});
+ 	}, 2200);
+});
+
 // Scroll to section functions
 
   $(document).ready(function(){
@@ -25,16 +42,9 @@
 	  		scrollTop: $("#contact").offset().top
 	  	}, 1000);
 	  });
-	  
+
   });
 
-$(function(){
-	$(".text-spec").typed({
-		strings: ["Junior Front-End Developer"],
-		typeSpeed: 60,
-		showCursor:false
-	});
-});
 
 
 $(document).ready(function(){

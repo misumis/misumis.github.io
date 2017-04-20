@@ -59,11 +59,75 @@ h2{
     text-transform: capitalize;
     
 }
+/*LOADER*/
+.loader-wrapper{
+  z-index: 1001;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.preloader-wrapper{
+  z-index: 1002;
+  
+}
+.loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #212121;
+    z-index: 1001;
+}
+ 
+.loader-section.section-left {
+    left: 0;
+}
+ 
+.loader-section.section-right {
+    right: 0;
+}
 
+
+.loaded .loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded .loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+.loaded .loader-wrapper .loader-section.section-left,
+.loaded .loader-wrapper .loader-section.section-right 
+{-webkit-transition: all 0.7s 0.3s ease-out; 
+            transition: all 0.7s 0.3s ease-out;}
+
+.loaded .preloader-wrapper {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
+}
+.loaded .loader-wrapper {
+-webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+}
 .container{
     margin: 0 auto;
     width: 100%;
 }
+
+
+
 /*********************************************NavBox**********************************************/
 
 .navbox{
@@ -71,7 +135,7 @@ h2{
   float:left;
   top:40%;
   left: 5%;
-  z-index: 9999;
+  z-index: 1000;
   position: fixed;
   
 }

@@ -9,31 +9,50 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!-- ****************   SCRIPTS  ******************* -->
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/typed.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script type="text/javascript" src="js/function.js"></script>
-	<!--<script src="/js/materialize.js" type="text/javascript" charset="utf-8" async defer></script>-->
+	<script src="js/materialize.js" type="text/javascript" charset="utf-8" async defer></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<script type="text/javascript" src="js/typed.min.js"></script>
 
+	<defs>
+      <g id="svg--document"><path d="M438.247,183.129L261.315,6.196h-15.192h-5.633H73.888V506h364.44V183.16L438.247,183.129z M261.315,35.645  l137.153,137.152H261.315V35.645z M94.713,485.175V27.021H240.49v166.601h177.014v291.552H94.713z"/></g>
+    </defs>
 
 	<title>Michał Nowak Portfolio</title>
 </head>
 <body>
+<div class="loader-wrapper">
+	<div class="preloader-wrapper big active">
+	    <div class="spinner-layer spinner-yellow-only">
+	      <div class="circle-clipper left">
+	        <div class="circle"></div>
+	      </div><div class="gap-patch">
+	        <div class="circle"></div>
+	      </div><div class="circle-clipper right">
+	        <div class="circle"></div>
+	      </div>
+	    </div>
+	  </div>	
+  <div class='loader-section section-left'></div>
+  <div class='loader-section section-right'></div>
+</div>
 	<!-- ****************   NAV-BOX  ******************* -->
 	<div class="containter">
 		<div class="navbox">
-		    <nav class="navbox-wrapper">
+		    <div class="navbox-wrapper">
 		        <ul class='navbox-list'>
 		        	<li class='menu-item'><a href="#home" class="menu-item-button main-nav" id="btnHome" >Home</a></li>
 		        	<li class='menu-item'><a href="#aboutme" class="menu-item-button aboutme-nav" id="btnAboutMe" >About Me</a></li>
 					<li class='menu-item'><a href="#skills" class="menu-item-button skills-nav" id="btnSkills" >Skills</a></li>
 					<li class='menu-item'><a href="#contact" class="menu-item-button contact-nav" id="btnContact" >Contact</a></li>
 		        </ul>
-		    </nav>	
+		    </div>	
 		    <div class="social-media">
 		    	
 		    </div>
@@ -44,7 +63,7 @@
 		<div class="area home-area" id="home">
 			<div class="authorname-wrapper">
 					<h1 class="text-name">Michał Nowak</h1>
-					<h1 class="text-spec">Junior Front-End Developer</h1>
+					<h1 class="text-spec"></h1>
 			</div>
 		</div>
 				<!-- ****************   SKILLS  ******************* -->
@@ -128,7 +147,9 @@
 		<div class='area contact-area' id='contact'>
 		<!-- <div class="shadow"></div> -->
 			<div class='contact-container'>
-				Michal
+				<div class="contact-form">
+					
+				</div>
 			</div>
 			
 		</div>
