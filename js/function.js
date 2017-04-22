@@ -1,5 +1,5 @@
 
-//Loader funciton
+//Loader funciton 
 $(document).ready(function() {
  
     setTimeout(function(){
