@@ -4,7 +4,7 @@ $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 1800); //1800
+    }, 1500); //1800
  	
  	setTimeout(function(){
  		$(".text-spec").typed({
@@ -12,7 +12,9 @@ $(document).ready(function() {
 		typeSpeed: 60,
 		showCursor:false
 	});
- 	}, 2200);
+	$("[href='#home']").addClass('active');
+	$("[id='hr_home']").addClass('active');
+ 	}, 2400);
 });
 
 // Scroll to section functions
@@ -48,7 +50,6 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-	$("[href='#" + 'home' + "']").addClass('active');
   // $sections incleudes all of the container divs that relate to menu items.
   var $sections = $('.area');
   $(window).scroll(function(){
@@ -68,8 +69,9 @@ $(document).ready(function(){
       }
       var id = $currentSection.attr('id');
    	 $('a').removeClass('active');
+   	 $('div').removeClass('active');
    	 $("[href='#" + id + "']").addClass('active');
-      
+      $("[id='hr_"+id+"']").addClass('active');
     })
 
   });
