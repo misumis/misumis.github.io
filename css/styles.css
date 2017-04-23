@@ -232,10 +232,10 @@ h2{
   top: 0;
   left: 0;
   right: 0;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   transform: translateY(-95%);
-  z-index: 10000;
+  z-index: 500;
   transition: transform 1.25s 0.15s cubic-bezier(0.55, -0.15, 0.45, 1.15);
   padding: 0;
   overflow-y: visible;
@@ -284,6 +284,7 @@ background: rgba(40,40,40,0.5);
 .navbox-toggle-button{
   visibility: visible;
   display: block;
+  
 }
 .droparrow-img{
     background: #ffffff;
@@ -292,6 +293,7 @@ background: rgba(40,40,40,0.5);
     border-top: 3px solid rgba(255,255,255,0.4);
     border-left: 3px solid rgba(255,255,255,0.4);
     border-radius: 50%;
+    
     box-shadow: 0px 0px 20px -8px #000000;
     cursor: pointer;
     display: inline-block;
@@ -299,9 +301,11 @@ background: rgba(40,40,40,0.5);
     height: 32px;
     padding: 0;
     position: absolute;
-    left: 49%;
+    left: 48%;
     bottom: -16px;
-    z-index: 500; }
+    z-index: 500; 
+    margin:auto;
+  }
 }
 
   .opened {
