@@ -22,9 +22,7 @@
 
 	<script type="text/javascript" src="js/typed.min.js"></script>
 
-	<defs>
-      <g id="svg--document"><path d="M438.247,183.129L261.315,6.196h-15.192h-5.633H73.888V506h364.44V183.16L438.247,183.129z M261.315,35.645  l137.153,137.152H261.315V35.645z M94.713,485.175V27.021H240.49v166.601h177.014v291.552H94.713z"/></g>
-    </defs>
+	
 
 	<title>Michał Nowak Portfolio</title>
 </head>
@@ -152,39 +150,40 @@
 		<div class='area contact-area' id='contact'>
 		<!-- <div class="shadow"></div> -->
 			<div class='contact-container'>
-				<form class="contact-form" id='contact-form' action="misumis.github.io" method="get">
-					<div class="contact-column">
-						<div class="input-field">
-							<i class="material-icons prefix">account_circle</i>
-				          <input id="first_name" type="text" class="validate">
-				          <label for="first_name">Name and surname</label>
-				        </div>
-			          	<div class="input-field">
-			          		<i class="material-icons prefix">email</i>
-					        <input id="email" type="email" class="validate">
-					        <label for="email">Email</label>
-				        </div>
-				        <div class="input-field">
-				          <i class="material-icons prefix">phone</i>
-				          <input id="icon_telephone" type="tel" class="validate">
-				          <label for="icon_telephone">Telephone</label>
-				        </div>
-						<div class="input-field">
-				          <i class="material-icons prefix">mode_edit</i>
-				          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          				<label for="textarea1">Message</label>
-				        </div>
-				        <button class="btn waves-effect waves-light contact-submit-button" type="submit" form='contact-form' value='Submit'>Submit
-						    <i class="material-icons right">send</i>
-						</button>
-						</div> <!-- COLUMN -->
-					<div class="contact-column">
-					</div>
+				<form class="contact-form" id='contact-form' action="http://formspree.io/nowak.1995.michal@gmail.com" method="POST" >
+					<div class="input-field">
+						<i class="material-icons prefix">account_circle</i>
+			          <input id="first_name" type="text" class="validate">
+			          <label for="first_name">Name and surname</label>
+			        </div>
+		          	<div class="input-field">
+		          		<i class="material-icons prefix">email</i>
+				        <input id="email" type="email" class="validate" name="_replyto">
+				        <label for="email">Email</label>
+			        </div>
+			        <div class="input-field">
+			          <i class="material-icons prefix">phone</i>
+			          <input id="icon_telephone" type="tel" class="validate">
+			          <label for="icon_telephone">Telephone</label>
+			        </div>
+					<div class="input-field">
+			          <i class="material-icons prefix">mode_edit</i>
+			          <textarea id="textarea1" class="materialize-textarea" name="body"></textarea>
+      				<label for="textarea1">Message</label>
+			        </div>
+			        <button class="btn waves-effect waves-light contact-submit-button" type="submit" form='contact-form' value='Send'>Submit
+					    <i class="material-icons right">send</i>
+					</button>
 				</form>
 			</div>
 		</div>
-
-			<div class="footer">Michal Nowak 2017 ©</div>
+						
+			<div class="footer">
+				<a href="https://www.fb.me/misumis2" class='footer-link'> <img src="img/facebook.svg" alt="" class='footer-img'> </a>
+				<a href='https://www.linkedin.com/in/michalnowak95/' class='footer-link'> <img src="img/linkedin.svg" alt="" class='footer-img'> </a>
+				<a href='https://github.com/misumis' class='footer-link'> <img src="img/github.svg" alt="" class='footer-img invert'> </a>
+				<p>Michał Nowak 2017 ©</p>
+			</div>
 	</div> <!--Containter -->
 
 	</body>

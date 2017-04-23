@@ -219,6 +219,8 @@ h2{
 .navbox-toggle-button{
   visibility: hidden;
   display: hidden;
+  height: 0px;
+  width: 0px;
 }
 
 @media (max-width:764px) {
@@ -284,14 +286,15 @@ background: rgba(40,40,40,0.5);
 .navbox-toggle-button{
   visibility: visible;
   display: block;
-  
+  height: initial;
+  width: initial;
 }
 .droparrow-img{
     background: #ffffff;
-    border-bottom: 3px solid rgba(255,255,255,0.4);
-    border-right: 3px solid rgba(255,255,255,0.4);
-    border-top: 3px solid rgba(255,255,255,0.4);
-    border-left: 3px solid rgba(255,255,255,0.4);
+    border-bottom: 3px solid rgba(0,0,0,0.8);
+    border-right: 3px solid rgba(0,0,0,0.8);
+    border-top: 3px solid rgba(0,0,0,0.8);
+    border-left: 3px solid rgba(0,0,0,0.8);
     border-radius: 50%;
     
     box-shadow: 0px 0px 20px -8px #000000;
@@ -516,22 +519,17 @@ background-size:50%;
 }
 
 .contact-form{
-  width: 70%;
-  display:flex;
-  flex-flow: row wrap;
+  width: 50%;
+  background: rgba(18,18,18,0.88);
+  margin:auto;
+  height: 80%%;
+  padding:5%;
+  flex-flow: column;
+  justify-content: center;
 }
 
-.contact-column{
-  flex: 1;
-  background: rgba(18,18,18,0.88);
-  display: flex;
-  margin:auto;
-  height: 100%;
-  padding:5%;
-  flex-flow: column wrap;
-}
 @media (max-width: 764px) {
-  .contact-column {
+  .contact-column-left,.contact-column-right {
     width:100%;
     flex-basis: 100%;}
     
@@ -552,11 +550,31 @@ background-size:50%;
   .contact-submit-button:hover{
     background: yellow;
   }
-
 .footer{
+  background: rgba(18,18,18,1);
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+}
+.footer p{
   height: 40px;
   bottom: 0px;
   text-align: right;
   line-height: 40px;
   margin-right: 40px;
+}
+.footer-link{
+  z-index: 9999;
+  height: 30px;
+  width: 30px;
+}
+.footer-img{
+  margin: 3px 10px;
+  display:block;
+  height: 30px;
+  width: 30px;
+  float: left;
+  z-index: 9999;
 }
