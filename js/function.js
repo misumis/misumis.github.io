@@ -4,7 +4,7 @@ $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 1500); //1800
+    }, 1); //1800
  	
  	setTimeout(function(){
  		$(".text-spec").typed({
@@ -12,12 +12,15 @@ $(document).ready(function() {
 		typeSpeed: 60,
 		showCursor:false
 	});
+ 		if ($(document).width() > 764) {
 	$("[href='#home']").addClass('active');
 	$("[id='hr_home']").addClass('active');
+	}
  	}, 2400);
 });
 
 // Scroll to section functions
+
 
   $(document).ready(function(){
 
@@ -45,6 +48,9 @@ $(document).ready(function() {
 	  	}, 1000);
 	  });
 
+		$('#navbox-toggle-button').click(function() {
+			$('.navbox').toggleClass('opened');
+		});
   });
 
 
@@ -62,16 +68,19 @@ $(document).ready(function(){
     
     // We check the position of each of the divs compared to the windows scroll positon
     $sections.each(function(){
-
+    	if( $( window ).width() > 764) {
       var divPosition = $(this).offset().top;
       if( divPosition - 1 < currentScroll ){
+      	if ($currentSection != $(this)) {
         $currentSection = $(this);
-      }
-      var id = $currentSection.attr('id');
+		var id = $currentSection.attr('id');
    	 $('a').removeClass('active');
    	 $('div').removeClass('active');
    	 $("[href='#" + id + "']").addClass('active');
       $("[id='hr_"+id+"']").addClass('active');
+        }
+      }
+  }
     })
 
   });
