@@ -1,0 +1,45 @@
+@import "variables";
+@import "reset";
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/pn300.otf") format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/pn500.otf") format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/pn700.otf") format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/pn800.otf") format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/pn900.otf") format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+
+
+@import "objects";
+@import "home";
+@import "aboutme";

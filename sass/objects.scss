@@ -1,0 +1,117 @@
+.details{
+
+    .objects{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .obj-1{
+        top: 90vh;
+        left: 15vw;
+        transform: rotate(30deg);
+    }
+    .obj-2{
+        top: 61vh;
+        left: 30vw;
+        transform: rotate(40deg);
+    }
+    .obj-3{
+        top: 30vh;
+        left: 18vw;
+        transform: rotate(50deg);
+    }
+    .obj-4{
+        top: 40vh;
+        left: 4vw;
+        transform: rotate(60deg);
+    }
+    .obj-5{
+        top: 50vh;
+        left: 93vw;
+        transform: rotate(70deg);
+    }
+    .obj-6{
+        top: 20vh;
+        left: 83vw;
+        transform: rotate(80deg);
+    }
+    .obj-7{
+        top: 83vh;
+        left: 87vw;
+        transform: rotate(10deg);
+    }
+    .obj-8{
+        top: 82vh;
+        left: 61vw;
+        transform: rotate(15deg);
+    }
+    .obj-9{
+        top: 20vh;
+        left: 25vw;
+        transform: rotate(40deg);
+    }
+    .obj-10{
+        top: 30vh;
+        left: 73vw;
+        transform: rotate(60deg);
+    }
+}
+
+@media (max-width:992px){
+    .details{
+        display: none;
+        .obj-1{
+            top: 87vh;
+            left: 13vw;
+            transform: rotate(30deg);
+        }
+        .obj-2{
+            top: 61vh;
+            left: 15vw;
+            transform: rotate(40deg);
+        }
+        .obj-3{
+            top: 30vh;
+            left: 16vw;
+            transform: rotate(50deg);
+        }
+        .obj-4{
+            top: 43vh;
+            left: 5vw;
+            transform: rotate(60deg);
+        }
+        .obj-5{
+            top: 52vh;
+            left: 90vw;
+            transform: rotate(70deg);
+        }
+        .obj-6{
+            top: 22vh;
+            left: 81vw;
+            transform: rotate(80deg);
+        }
+        .obj-7{
+            top: 85vh;
+            left: 89vw;
+            transform: rotate(10deg);
+        }
+        .obj-8{
+            top: 72vh;
+            left: 86vw;
+            transform: rotate(15deg);
+        }
+        .obj-9{
+            top: 21vh;
+            left: 24vw;
+            transform: rotate(40deg);
+        }
+        .obj-10{
+            top: 30vh;
+            left: 93vw;
+            transform: rotate(60deg);
+        }
+    }
+    
+}

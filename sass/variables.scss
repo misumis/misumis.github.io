@@ -1,0 +1,12 @@
+$ebony: #0E1720;
+$crimson: #E11E14;
+
+
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
