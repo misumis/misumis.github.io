@@ -1,25 +1,316 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - sass/main.sass
-
-Backtrace:
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `read'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Users/Michal/.rvm/rubies/ruby-2.4.0/bin/sass:22:in `load'
-/Users/Michal/.rvm/rubies/ruby-2.4.0/bin/sass:22:in `<main>'
-/Users/Michal/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
-/Users/Michal/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+@keyframes rotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - sass/main.sass"; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/pn300.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/pn500.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/pn700.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/pn800.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/pn900.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal; }
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Proxima Nova', sans-serif; }
+
+.details .objects {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.3s ease-in-out; }
+.details .obj-1 {
+  top: 90vh;
+  left: 15vw;
+  transform: rotate(30deg); }
+.details .obj-2 {
+  top: 61vh;
+  left: 30vw;
+  transform: rotate(40deg); }
+.details .obj-3 {
+  top: 30vh;
+  left: 18vw;
+  transform: rotate(50deg); }
+.details .obj-4 {
+  top: 40vh;
+  left: 4vw;
+  transform: rotate(60deg); }
+.details .obj-5 {
+  top: 50vh;
+  left: 93vw;
+  transform: rotate(70deg); }
+.details .obj-6 {
+  top: 20vh;
+  left: 83vw;
+  transform: rotate(80deg); }
+.details .obj-7 {
+  top: 83vh;
+  left: 87vw;
+  transform: rotate(10deg); }
+.details .obj-8 {
+  top: 82vh;
+  left: 61vw;
+  transform: rotate(15deg); }
+.details .obj-9 {
+  top: 20vh;
+  left: 25vw;
+  transform: rotate(40deg); }
+.details .obj-10 {
+  top: 30vh;
+  left: 73vw;
+  transform: rotate(60deg); }
+
+@media (max-width: 992px) {
+  .details {
+    display: none; }
+    .details .obj-1 {
+      top: 87vh;
+      left: 13vw;
+      transform: rotate(30deg); }
+    .details .obj-2 {
+      top: 61vh;
+      left: 15vw;
+      transform: rotate(40deg); }
+    .details .obj-3 {
+      top: 30vh;
+      left: 16vw;
+      transform: rotate(50deg); }
+    .details .obj-4 {
+      top: 43vh;
+      left: 5vw;
+      transform: rotate(60deg); }
+    .details .obj-5 {
+      top: 52vh;
+      left: 90vw;
+      transform: rotate(70deg); }
+    .details .obj-6 {
+      top: 22vh;
+      left: 81vw;
+      transform: rotate(80deg); }
+    .details .obj-7 {
+      top: 85vh;
+      left: 89vw;
+      transform: rotate(10deg); }
+    .details .obj-8 {
+      top: 72vh;
+      left: 86vw;
+      transform: rotate(15deg); }
+    .details .obj-9 {
+      top: 21vh;
+      left: 24vw;
+      transform: rotate(40deg); }
+    .details .obj-10 {
+      top: 30vh;
+      left: 93vw;
+      transform: rotate(60deg); } }
+.homepage {
+  height: 100vh;
+  width: 100%;
+  background: #E11E14; }
+  .homepage .menu {
+    display: flex;
+    margin: 0;
+    min-height: 100px;
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 0;
+    padding-top: 40px;
+    position: relative; }
+    .homepage .menu-list {
+      height: 4.2rem;
+      padding-bottom: 5px;
+      margin: auto; }
+      .homepage .menu-list-point {
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        z-index: 1;
+        position: relative; }
+        .homepage .menu-list-point::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: white;
+          height: 100%;
+          width: 0;
+          z-index: 1;
+          transition: width 0.5s ease-in-out; }
+        .homepage .menu-list-point:hover::before {
+          z-index: 1;
+          content: "";
+          width: 50%; }
+        .homepage .menu-list-point a {
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          color: #0E1720;
+          font-size: 1.8rem;
+          text-decoration: none;
+          padding: 2px 15px; }
+          .homepage .menu-list-point a span {
+            display: inline-block;
+            color: #000;
+            z-index: 99; }
+    .homepage .menu .title {
+      margin: 0;
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      float: left;
+      color: #0E1720;
+      font-size: 4rem;
+      font-weight: 900; }
+      .homepage .menu .title span {
+        border-bottom: 5px solid #0E1720; }
+  .homepage .logo {
+    width: 20%;
+    position: relative;
+    left: 50%;
+    top: 28%;
+    margin-left: -10%;
+    margin-top: -10%; }
+    .homepage .logo .teaser {
+      margin-top: 20px;
+      font-size: 4.2rem;
+      font-weight: 700;
+      color: #0E1720;
+      text-align: center; }
+
+@media (max-width: 992px) {
+  .homepage .menu-list {
+    display: none; }
+  .homepage .menu .title {
+    left: 20px;
+    top: 20px;
+    color: #0E1720;
+    font-size: 4rem;
+    font-weight: 900; }
+    .homepage .menu .title span {
+      border-bottom: 5px solid #0E1720; }
+  .homepage .logo {
+    width: 200px;
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 15%;
+    margin-left: -100px;
+    margin-top: -100px; } }
+.aboutme {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 10px; }
+  .aboutme .title {
+    margin: 0;
+    padding: 40px  0 0 40px;
+    color: #0E1720;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff; }
+    .aboutme .title span {
+      border-bottom: 5px solid #E11E14; }
+  .aboutme .teaser {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: #fff; }
+  .aboutme .text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    max-width: 500px;
+    color: #fff; }
+    .aboutme .text a {
+      text-decoration: underline;
+      color: #fff;
+      font-weight: 700;
+      transition: color 0.3s ease-in-out; }
+      .aboutme .text a:hover {
+        color: #E11E14; }
+
+@media (max-width: 992px) {
+  .aboutme .title {
+    padding-top: 20px;
+    text-align: center; }
+
+  .text {
+    text-align: center;
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
