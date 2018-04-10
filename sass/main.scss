@@ -1,5 +1,7 @@
 @import "variables";
 @import "reset";
+@import "bootstrap.css";
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url("../fonts/pn300.otf") format('opentype');
@@ -43,3 +45,6 @@ body{
 @import "objects";
 @import "home"; 
 @import "aboutme";
+@import "skillset";
+@import "projects";
+@import "contact";

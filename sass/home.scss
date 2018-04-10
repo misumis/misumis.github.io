@@ -29,15 +29,15 @@
                     left: 0;
                     background:white;
                     height: 100%;
-                    width: 0;
+                    width: 0%;
                     z-index: 1;
-                    transition: width 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
                 }
                 &:hover{
                     &::before{
                         z-index: 1;
                         content: "";
-                        width: 50%;
+                        width: 100%;
                     }
                 }
                 a{

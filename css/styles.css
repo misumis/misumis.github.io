@@ -1,3 +1,4 @@
+@import url(bootstrap.css);
 @keyframes rotating {
   from {
     transform: rotate(0deg); }
@@ -201,13 +202,13 @@ body {
           left: 0;
           background: white;
           height: 100%;
-          width: 0;
+          width: 0%;
           z-index: 1;
-          transition: width 0.5s ease-in-out; }
+          transition: all 0.5s ease-in-out; }
         .homepage .menu-list-point:hover::before {
           z-index: 1;
           content: "";
-          width: 50%; }
+          width: 100%; }
         .homepage .menu-list-point a {
           width: 100%;
           height: 100%;
@@ -307,10 +308,80 @@ body {
 @media (max-width: 992px) {
   .aboutme .title {
     padding-top: 20px;
-    text-align: center; }
-
-  .text {
+    padding-left: 20px; }
+  .aboutme .teaser {
     text-align: center;
-    width: 100%; } }
+    padding: 0 10px; }
+  .aboutme .text {
+    text-align: center;
+    width: 100%;
+    padding: 0 10px; } }
+.skillset {
+  width: 100%;
+  min-height: 100vh;
+  background: white; }
+  .skillset .title {
+    margin: 0;
+    padding: 40px  0 0 40px;
+    color: #0E1720;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #0E1720; }
+    .skillset .title span {
+      border-bottom: 5px solid #E11E14; }
+  .skillset .skill {
+    margin-top: 25vh;
+    margin-bottom: 15vh; }
+    .skillset .skill .icon {
+      margin-top: 50px;
+      text-align: center; }
+    .skillset .skill .hor-line {
+      margin: 50px auto;
+      height: 5px;
+      width: 40px;
+      background: #E11E14; }
+    .skillset .skill .subtitle {
+      margin: 50px 0;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 900; }
+    .skillset .skill .text {
+      padding: 0 40px;
+      font-weight: 300;
+      font-size: 1.8rem;
+      text-align: center; }
+
+@media (max-width: 992px) {
+  .skillset .title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 20px  0 0 20px;
+    color: #0E1720;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #0E1720; }
+    .skillset .title span {
+      border-bottom: 5px solid #E11E14; }
+  .skillset .skill {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .skillset .skill .icon {
+      margin-top: 30px;
+      text-align: center; }
+    .skillset .skill .hor-line {
+      margin: 30px auto;
+      height: 5px;
+      width: 40px;
+      background: #E11E14; }
+    .skillset .skill .subtitle {
+      margin: 30px 0;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 900; }
+    .skillset .skill .text {
+      padding: 0 20px;
+      font-weight: 300;
+      font-size: 1.8rem;
+      text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */
