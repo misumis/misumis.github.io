@@ -1,0 +1,16 @@
+.projects{
+    height: 100vh;
+    width: 100%;
+    background:$ebony;
+    .title{
+        margin:0;
+        padding: 40px  0 0 40px;
+        font-size:4rem;
+        font-weight: 900;
+        color:white;
+        
+        span{
+            border-bottom: 5px solid $crimson; 
+        }
+    }
+}
