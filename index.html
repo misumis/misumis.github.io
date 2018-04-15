@@ -128,8 +128,11 @@
                 <h2 class="title">
                     <span>Contact</span>
                 </h2>
-                <form action="submit">
-
+                <form  action="sendmail.php" method="POST">
+                    <input type="email" name="email" placeholder="E-mail"/>
+                    <input type="text" name="name" placeholder="Name"/>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                    <button class="form-button"></button>
                 </form>
             </div>
             <div class="col-md-6 decor">
