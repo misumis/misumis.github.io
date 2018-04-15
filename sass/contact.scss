@@ -1,8 +1,11 @@
+:focus{outline: none;}
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background: white;
+
+   
     .title {
+
         margin: 0;
         padding: 40px 0 0 40px;
         font-size: 4rem;
@@ -10,6 +13,93 @@
         color: $ebony;
         span {
             border-bottom: 5px solid $crimson;
+        }
+    }
+    &-area {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    &-form {
+        margin:auto;
+        width: 100%;
+        .input-effect{
+            width: 40%;
+            position: relative;
+            margin: auto;
+        }
+        .contact-input {
+            width: 100%;
+            display: block;
+            border: 0;
+            height: 50px;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+        .contact-input {
+            z-index: 5;
+            border: 0;
+            padding: 4px 0;
+            padding-left: 15px;
+            border-bottom: 2px solid #999;
+            background-color: transparent;
+        }
+        .contact-input~.focus-border {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $crimson;
+            transition: 0.4s;
+        }
+        .contact-input:focus~.focus-border,
+        .has-content.contact-input~.focus-border {
+            width: 100%;
+            transition: 0.4s;
+        }
+        .contact-input~label {
+            position: absolute;
+            left: 15px;
+            width: 100%;
+            top: 20px;
+            font-size:1.4rem;
+            color: #999;
+            transition: 0.3s;
+            z-index: -1;
+        }
+        .contact-input:focus~label,
+        .has-content.contact-input~label {
+            top: -16px;
+            left: 0px;
+            font-size: 1.0rem;
+            color: $crimson;
+            transition: 0.3s;
+        }
+
+        .contact-textarea {
+            margin: auto;
+            display: block;
+            border: 0;
+            border-bottom: 2px solid $crimson;
+            width: 40%;
+            height: 50px;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+        .contact-button {
+            margin: auto;
+            display: block;
+            border: 0;
+            background: $crimson;
+            border-radius: 0;
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
         }
     }
     .decor {
@@ -31,8 +121,7 @@
         }
         .decor {
             display: none;
-            .logo {
-            }
+            .logo {}
         }
     }
 }

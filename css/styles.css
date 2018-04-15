@@ -349,6 +349,7 @@ body {
       padding: 0 40px;
       font-weight: 300;
       font-size: 1.8rem;
+      line-height: 1.5;
       text-align: center; }
 
 @media (max-width: 992px) {
@@ -382,6 +383,7 @@ body {
       padding: 0 20px;
       font-weight: 300;
       font-size: 1.8rem;
+      line-height: 1.5;
       text-align: center; } }
 .projects {
   height: 100vh;
@@ -396,10 +398,12 @@ body {
     .projects .title span {
       border-bottom: 5px solid #E11E14; }
 
+:focus {
+  outline: none; }
+
 .contact {
-  height: 100vh;
-  width: 100%;
-  background: white; }
+  min-height: 100vh;
+  width: 100%; }
   .contact .title {
     margin: 0;
     padding: 40px 0 0 40px;
@@ -408,6 +412,81 @@ body {
     color: #0E1720; }
     .contact .title span {
       border-bottom: 5px solid #E11E14; }
+  .contact-area {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+  .contact-form {
+    margin: auto;
+    width: 100%; }
+    .contact-form .input-effect {
+      width: 40%;
+      position: relative;
+      margin: auto; }
+    .contact-form .contact-input {
+      width: 100%;
+      display: block;
+      border: 0;
+      height: 50px;
+      font-size: 1.4rem;
+      margin-bottom: 40px; }
+    .contact-form .contact-input {
+      z-index: 5;
+      border: 0;
+      padding: 4px 0;
+      padding-left: 15px;
+      border-bottom: 2px solid #999;
+      background-color: transparent; }
+    .contact-form .contact-input ~ .focus-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #E11E14;
+      transition: 0.4s; }
+    .contact-form .contact-input:focus ~ .focus-border,
+    .contact-form .has-content.contact-input ~ .focus-border {
+      width: 100%;
+      transition: 0.4s; }
+    .contact-form .contact-input ~ label {
+      position: absolute;
+      left: 15px;
+      width: 100%;
+      top: 20px;
+      font-size: 1.4rem;
+      color: #999;
+      transition: 0.3s;
+      z-index: -1; }
+    .contact-form .contact-input:focus ~ label,
+    .contact-form .has-content.contact-input ~ label {
+      top: -16px;
+      left: 0px;
+      font-size: 1.0rem;
+      color: #E11E14;
+      transition: 0.3s; }
+    .contact-form .contact-textarea {
+      margin: auto;
+      display: block;
+      border: 0;
+      border-bottom: 2px solid #E11E14;
+      width: 40%;
+      height: 50px;
+      font-size: 1.4rem;
+      margin-bottom: 40px; }
+    .contact-form .contact-button {
+      margin: auto;
+      display: block;
+      border: 0;
+      background: #E11E14;
+      border-radius: 0;
+      color: white;
+      width: 200px;
+      height: 50px;
+      font-size: 1.4rem;
+      margin-bottom: 40px; }
   .contact .decor {
     background: #E11E14;
     height: 100vh;

@@ -23,3 +23,14 @@ $(document).on('click', 'a[href^="#"]', function(e) {
   var pos = $id.offset().top;
   $('body, html').animate({scrollTop: pos}, 1000);
 });
+
+$(document).ready(function(){
+  
+  $(".input-effect input, .input-effect textarea").focusout(function(){
+    if($(this).val() != ""){
+      $(this).addClass("has-content");
+    }else{
+      $(this).removeClass("has-content");
+    }
+  })
+});

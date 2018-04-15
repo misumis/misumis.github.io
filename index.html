@@ -73,7 +73,7 @@
         <p class="text">
             I design and create high quality web pages and mobile applications.
         </p>
-        <p class="text">I am graduate from International Faculty of Enineering in Politechnika Łódzka in Computer Science course.</p>
+        <p class="text">I am graduate from Technical University in Łódź in Computer Science course.</p>
         <p class="text">Currently I am working in <a href="https://inovatica.com/">Inovatica</a> in Łódź</p>
     </div>
     <div id="skillset" class="skillset">
@@ -89,7 +89,7 @@
                         </div>
                         <div class="hor-line"></div>
                         <p class="subtitle">Idea</p>
-                        <p class="text">I work with clients and peers to create and transform ideas into top-notch design specs. Conversation is there the amazing user experience begins.</p>
+                        <p class="text">The most impressive websites and app experiences are rooted in smart design, embody clear vision, and are backed by the right technology.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -99,7 +99,7 @@
                         </div>
                         <div class="hor-line"></div>
                         <p class="subtitle">Design</p>
-                        <p class="text">I work with proper tools and focus on content structure to create simple and intuitive UI design. Minimalism is my domain.</p>
+                        <p class="text">A website is a necessary tool for nearly every business and organization. An effective, beautiful website is a game changer. I design top-notch responsive sites with care given to everything from information architecture to content, color to typography, UX to ecommerce.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -109,7 +109,7 @@
                         </div>
                         <div class="hor-line"></div>
                         <p class="subtitle">Code</p>
-                        <p class="text">I implement HTML, CSS and JavaScript code, creating a website. Using frameworks such as TYPO3 or Wordpress is not new to me.</p>
+                        <p class="text">I build clean, responsive websites that work on a variety of screens and devices. I work with Adobe, SASS, HTML5/CSS3 & Javascript. I have a working knowledge of popular frameworks like Bootstrap and know my way around version management and working in SCRUM teams.</p>
                     </div>
                 </div>
             </div>
@@ -124,15 +124,29 @@
     <div id="contact" class="contact">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 contact-area">
                 <h2 class="title">
                     <span>Contact</span>
                 </h2>
-                <form  action="sendmail.php" method="POST">
-                    <input type="email" name="email" placeholder="E-mail"/>
-                    <input type="text" name="name" placeholder="Name"/>
-                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                    <button class="form-button"></button>
+                <form action="sendmail.php" class="contact-form" method="POST">
+                    <div class="input-effect">
+                        <input type="email" name="email" required  class="contact-input" placeholder="" />
+                        <label>E-mail Address</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="input-effect">
+                        <input type="text" name="name"  required class="contact-input" placeholder="" />
+                        <label>Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-effect">
+                        <textarea name="text" id="text" placeholder=""  required class="contact-input"></textarea>
+                        <label class="floating-label">Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <button class="contact-button" value="">Submit</button>
                 </form>
             </div>
             <div class="col-md-6 decor">
