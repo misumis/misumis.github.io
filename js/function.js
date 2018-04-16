@@ -3,7 +3,7 @@ $(document).ready(function(){
     window.onscroll = function() {
  
        //Determine the amount to rotate by.
-       var deg = -window.scrollY*(360/bodyHeight)*0.5;
+       var deg = -window.scrollY*(360/bodyHeight)*2.5;
  
        $(".objects img").css({
          "transform": "rotate("+deg+"deg)",
@@ -26,6 +26,14 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
 $(document).ready(function(){
   
+  $(".input-effect input, .input-effect textarea").each(function(){
+    if($(this).val() != ""){
+      $(this).addClass("has-content");
+    }else{
+      $(this).removeClass("has-content");
+    }
+  })
+
   $(".input-effect input, .input-effect textarea").focusout(function(){
     if($(this).val() != ""){
       $(this).addClass("has-content");

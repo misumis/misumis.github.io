@@ -82,6 +82,22 @@ html {
 body {
   font-family: 'Proxima Nova', sans-serif; }
 
+.notification {
+  height: 100vh;
+  width: 100%;
+  background: #E11E14; }
+  .notification .title {
+    margin: 0;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    float: left;
+    color: #0E1720;
+    font-size: 4rem;
+    font-weight: 900; }
+    .notification .title span {
+      border-bottom: 5px solid #0E1720; }
+
 .details .objects {
   width: 20px;
   height: 20px;
@@ -89,8 +105,8 @@ body {
   z-index: 0;
   transition: all 0.3s ease-in-out; }
 .details .obj-1 {
-  top: 90vh;
-  left: 15vw;
+  top: 20vh;
+  left: 25vw;
   transform: rotate(30deg); }
 .details .obj-2 {
   top: 61vh;
@@ -121,8 +137,8 @@ body {
   left: 61vw;
   transform: rotate(15deg); }
 .details .obj-9 {
-  top: 20vh;
-  left: 25vw;
+  top: 90vh;
+  left: 15vw;
   transform: rotate(40deg); }
 .details .obj-10 {
   top: 30vh;
@@ -315,7 +331,8 @@ body {
   .aboutme .text {
     text-align: center;
     width: 100%;
-    padding: 0 10px; } }
+    padding: 0 10px;
+    max-width: 100%; } }
 .skillset {
   width: 100%;
   min-height: 100vh;
@@ -422,10 +439,11 @@ body {
     margin: auto;
     width: 100%; }
     .contact-form .input-effect {
-      width: 40%;
+      width: 50%;
       position: relative;
       margin: auto; }
     .contact-form .contact-input {
+      border-radius: 0;
       width: 100%;
       display: block;
       border: 0;
@@ -446,16 +464,18 @@ body {
       width: 0;
       height: 2px;
       background-color: #E11E14;
-      transition: 0.4s; }
+      transition: 0.5s;
+      transition-timing-function: ease-in-out; }
     .contact-form .contact-input:focus ~ .focus-border,
     .contact-form .has-content.contact-input ~ .focus-border {
       width: 100%;
-      transition: 0.4s; }
+      transition: 0.5s;
+      transition-timing-function: ease-in-out; }
     .contact-form .contact-input ~ label {
       position: absolute;
       left: 15px;
       width: 100%;
-      top: 20px;
+      top: 17px;
       font-size: 1.4rem;
       color: #999;
       transition: 0.3s;
@@ -470,12 +490,11 @@ body {
     .contact-form .contact-textarea {
       margin: auto;
       display: block;
-      border: 0;
-      border-bottom: 2px solid #E11E14;
-      width: 40%;
       height: 50px;
+      line-height: 1.5;
       font-size: 1.4rem;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      padding-top: 15px; }
     .contact-form .contact-button {
       margin: auto;
       display: block;
@@ -484,9 +503,18 @@ body {
       border-radius: 0;
       color: white;
       width: 200px;
+      border: 2px solid #E11E14;
+      transition: 0.5s;
+      transition-timing-function: ease-in-out;
       height: 50px;
       font-size: 1.4rem;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      font-weight: 700; }
+      .contact-form .contact-button:hover {
+        background: transparent;
+        color: #E11E14; }
+    .contact-form textarea {
+      resize: none; }
   .contact .decor {
     background: #E11E14;
     height: 100vh;
@@ -499,6 +527,8 @@ body {
 @media (max-width: 992px) {
   .contact .title {
     padding: 20px 0 0 20px; }
+  .contact .contact-form .input-effect {
+    width: 90%; }
   .contact .decor {
     display: none; } }
 

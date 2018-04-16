@@ -26,11 +26,12 @@
         margin:auto;
         width: 100%;
         .input-effect{
-            width: 40%;
+            width: 50%;
             position: relative;
             margin: auto;
         }
         .contact-input {
+            border-radius: 0;
             width: 100%;
             display: block;
             border: 0;
@@ -53,18 +54,20 @@
             width: 0;
             height: 2px;
             background-color: $crimson;
-            transition: 0.4s;
+            transition: 0.5s;
+            transition-timing-function: ease-in-out;
         }
         .contact-input:focus~.focus-border,
         .has-content.contact-input~.focus-border {
             width: 100%;
-            transition: 0.4s;
+            transition: 0.5s;
+            transition-timing-function: ease-in-out;
         }
         .contact-input~label {
             position: absolute;
             left: 15px;
             width: 100%;
-            top: 20px;
+            top: 17px;
             font-size:1.4rem;
             color: #999;
             transition: 0.3s;
@@ -82,12 +85,11 @@
         .contact-textarea {
             margin: auto;
             display: block;
-            border: 0;
-            border-bottom: 2px solid $crimson;
-            width: 40%;
             height: 50px;
+            line-height: 1.5;
             font-size: 1.4rem;
             margin-bottom: 40px;
+            padding-top: 15px;
         }
         .contact-button {
             margin: auto;
@@ -97,9 +99,20 @@
             border-radius: 0;
             color: white;
             width: 200px;
+            border: 2px solid $crimson;
+            transition: 0.5s;
+            transition-timing-function: ease-in-out;
             height: 50px;
             font-size: 1.4rem;
             margin-bottom: 40px;
+            font-weight: 700;
+            &:hover{
+                background:transparent;
+                color:$crimson;
+            }
+        }
+        textarea{
+            resize: none;
         }
     }
     .decor {
@@ -118,6 +131,16 @@
     .contact {
         .title {
             padding: 20px 0 0 20px;
+        }
+        .contact {
+            &-form {
+                .input-effect{
+                    width: 90%;
+                }
+                .contact-input {
+                    
+                }
+            }
         }
         .decor {
             display: none;
