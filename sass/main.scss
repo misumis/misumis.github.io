@@ -1,6 +1,6 @@
 @import "variables";
 @import "reset";
-@import "bootstrap.css";
+@import url("bootstrap.css");
 
 @font-face {
     font-family: 'Proxima Nova';
@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'Proxima Nova';
-    src: url("../fonts/pn700.otf") format('opentype');
+    src: url("../fonts/pn700.otf") format('opentype'); 
     font-weight: 700;
     font-style: normal;
 }
