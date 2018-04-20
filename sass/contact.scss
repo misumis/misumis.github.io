@@ -1,11 +1,11 @@
-:focus{outline: none;}
+:focus {
+    outline: none;
+}
+
 .contact {
     min-height: 100vh;
     width: 100%;
-
-   
     .title {
-
         margin: 0;
         padding: 40px 0 0 40px;
         font-size: 4rem;
@@ -23,9 +23,9 @@
         flex-direction: column;
     }
     &-form {
-        margin:auto;
+        margin: auto;
         width: 100%;
-        .input-effect{
+        .input-effect {
             width: 50%;
             position: relative;
             margin: auto;
@@ -68,7 +68,7 @@
             left: 15px;
             width: 100%;
             top: 17px;
-            font-size:1.4rem;
+            font-size: 1.4rem;
             color: #999;
             transition: 0.3s;
             z-index: -1;
@@ -81,7 +81,6 @@
             color: $crimson;
             transition: 0.3s;
         }
-
         .contact-textarea {
             margin: auto;
             display: block;
@@ -106,12 +105,12 @@
             font-size: 1.4rem;
             margin-bottom: 40px;
             font-weight: 700;
-            &:hover{
-                background:transparent;
-                color:$crimson;
+            &:hover {
+                background: transparent;
+                color: $crimson;
             }
         }
-        textarea{
+        textarea {
             resize: none;
         }
     }
@@ -130,17 +129,13 @@
 @media(max-width:992px) {
     .contact {
         .title {
-            padding: 20px 0 0 20px;
+            padding: 20px 0 0 5px;
         }
-        .contact {
-            &-form {
-                .input-effect{
-                    width: 90%;
-                }
-                .contact-input {
-                    
-                }
+        &-form {
+            .input-effect {
+                width: 90%;
             }
+            .contact-input {}
         }
         .decor {
             display: none;

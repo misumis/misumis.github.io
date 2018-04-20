@@ -1,5 +1,5 @@
 .projects {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: $ebony;
     .title {
@@ -21,6 +21,9 @@
     }
     &-showcase {
         position: relative;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
         &::before{
             content: "";
             background: white;
@@ -43,9 +46,7 @@
             left: calc(50% - 15px);
             z-index: 20;
         }
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
+        
         .projects-showcase-item {
             
             background-color: $crimson;
@@ -85,6 +86,51 @@
         }
         &:nth-child(odd) {
             flex: 0 0 50%;
+        }
+    }
+}
+@media (max-width: 992px){
+    .projects {
+        .title {
+            padding: 20px 0 0 20px;
+        }
+        &-showcase {
+            &::before{
+                display: none;
+            }
+            &::after{
+                display: none;
+            }
+            .projects-showcase-item {
+            
+                flex: 1 1 100%;
+                width: 20vw;
+                height: 30vh;
+                &::before{
+                    content: "";
+                    background: white;
+                    height: 4px;
+                    width: 30px;
+                    color:white;
+                    position: absolute;
+                    bottom: -2px;
+                    left: calc(50% - 15px);
+                    z-index: 20;
+                }
+                a{
+    
+                    text-align: center;
+                }
+            }
+            &:nth-child(odd) {
+                flex: 0 0 100%;
+            }
+            &:first-of-type{
+                margin-top: 40px;
+            }
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
         }
     }
 }
