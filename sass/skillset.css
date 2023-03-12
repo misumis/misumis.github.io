@@ -1,0 +1,84 @@
+/*
+Error: Undefined variable: "$ebony".
+        on line 8 of sass/skillset.scss
+
+3:     min-height: 100vh;
+4:     background:white;
+5:     .title{
+6:         margin:0;
+7:         padding: 40px  0 0 40px;
+8:         color: $ebony;
+9:         font-size:4rem;
+10:         font-weight: 900;
+11:         color:$ebony;
+12:         
+13:         span{
+
+Backtrace:
+sass/skillset.scss:8
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Michal/.rvm/gems/ruby-2.4.0@global/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/Users/Michal/.rvm/rubies/ruby-2.4.0/bin/scss:22:in `load'
+/Users/Michal/.rvm/rubies/ruby-2.4.0/bin/scss:22:in `<main>'
+/Users/Michal/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/Michal/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$ebony\".\A         on line 8 of sass/skillset.scss\A \A 3:     min-height: 100vh;\A 4:     background:white;\A 5:     .title{\A 6:         margin:0;\A 7:         padding: 40px  0 0 40px;\A 8:         color: $ebony;\A 9:         font-size:4rem;\A 10:         font-weight: 900;\A 11:         color:$ebony;\A 12:         \A 13:         span{"; }

@@ -1,6 +1,9 @@
 @import "variables";
 @import "reset";
-@import url("bootstrap.css");
+
+* {
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: 'Proxima Nova';
@@ -40,11 +43,4 @@ body{
     font-family: 'Proxima Nova', sans-serif;
 }
 
-
-@import "notification";
-@import "objects";
-@import "home"; 
-@import "aboutme";
-@import "skillset";
-@import "projects";
 @import "contact";
